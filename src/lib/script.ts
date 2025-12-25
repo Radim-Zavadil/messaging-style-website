@@ -1,11 +1,21 @@
+export type MessageType =
+  | "text"
+  | "gallery"
+  | "image"
+  | "cta"
+  | "form"
+  | "startover"
+  | "arrow"
+  | "copyright"
+
 export type Message = {
-    id: string
-    sender: "agency" | "user"
-    type: "text" | "button" | "gallery" | "image" | "form"
-    content: any
-    delay?: number
-    typingDuration?: number
-  }
+  id: string
+  sender: "agency" | "user"
+  type: MessageType
+  content?: any
+  typingDuration?: number
+}
+  
   
   export const script: Message[] = [
     {
@@ -25,7 +35,7 @@ export type Message = {
     {
       id: "3",
       sender: "user",
-      type: "button",
+      type: "text",
       content: "I'd like to see your work",
     },
     {
@@ -54,11 +64,22 @@ export type Message = {
       content: "I'm interested",
     },
     {
-      id: "7",
+      id: "cta",
+      sender: "agency",
+      type: "cta",
+      content: "Work With Us",
+      typingDuration: 900,
+    },
+    {
+      id: "form",
       sender: "agency",
       type: "form",
-      content: "Leave a message and we’ll get back to you.",
-      typingDuration: 1000,
+      typingDuration: 700,
     },
+    {
+      id: "startover",
+      sender: "agency",
+      type: "startover",
+    }
   ]
   
