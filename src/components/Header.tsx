@@ -13,11 +13,11 @@ export default function Header() {
         day: "2-digit",
         month: "2-digit",
       }) +
-        " " +
-        now.toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-        })
+      " " +
+      now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+      })
     )
   }, [])
 
@@ -36,8 +36,8 @@ export default function Header() {
         Static ad designs for 6 fig to 9 fig brands.
         <br />
         Making ads for →{" "}
-        <span className="text-blue-500">@brand1</span> ·{" "}
-        <span className="text-blue-500">@brand2</span>
+        <span className="text-[#0095fa]">@brand1</span> ·{" "}
+        <span className="text-[#0095fa]">@brand2</span>
       </p>
 
       <p className="mt-3 text-gray-400 text-sm">

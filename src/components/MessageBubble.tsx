@@ -48,11 +48,11 @@ export default function MessageBubble({ message }: any) {
       <div
         className={`
           max-w-[85%]
-          text-sm
+          text-md
           animate-[fadeIn_0.3s_ease-out_forwards]
           ${isUser
-            ? "bg-blue-600 text-white rounded-2xl rounded-br-md px-4 py-2"
-            : "bg-gray-100 text-gray-900 rounded-2xl rounded-bl-md px-4 py-2"}
+            ? "bg-[#011AFA] text-white rounded-2xl rounded-br-md px-4 py-1"
+            : "bg-[#F7F7F7] text-gray-900 rounded-2xl rounded-bl-md px-4 py-1"}
         `}
       >
         {/* TEXT */}
@@ -60,7 +60,7 @@ export default function MessageBubble({ message }: any) {
 
         {/* CTA */}
         {message.type === "cta" && (
-          <button className="w-full bg-blue-600 text-white py-2 rounded-full font-medium">
+          <button className="w-full bg-[#011AFA] text-white py-2 rounded-full font-medium">
             {message.content}
           </button>
         )}

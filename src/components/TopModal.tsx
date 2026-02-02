@@ -21,8 +21,11 @@ export default function TopModal() {
         ${visible ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="bg-white shadow-md px-4 py-3 text-center text-sm">
-        YOUR AGENCY NAME — Scale paid ads
+      <div className="bg-white/80 backdrop-blur-md px-4 py-8 border-b border-white/20 flex flex-col items-center justify-center gap-1">
+        <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-[10px]">
+          LOGO
+        </div>
+        <span className="text-md font-semibold">YOUR AGENCY NAME</span>
       </div>
     </div>
   )
