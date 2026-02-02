@@ -22,8 +22,8 @@ export default function TopModal() {
       `}
     >
       <div className="bg-white/80 backdrop-blur-md px-4 py-8 border-b border-white/20 flex flex-col items-center justify-center gap-1">
-        <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-[10px]">
-          LOGO
+        <div className="w-11 h-11 rounded-full bg-[#011AFA]">
+
         </div>
         <span className="text-md font-semibold">YOUR AGENCY NAME</span>
       </div>

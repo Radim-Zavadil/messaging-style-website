@@ -23,8 +23,7 @@ export default function Header() {
 
   return (
     <div className="text-center px-6 pt-8 pb-6">
-      <div className="mx-auto w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
-        LOGO
+      <div className="mx-auto w-16 h-16 rounded-full bg-[#011AFA]">
       </div>
 
       <h1 className="mt-4 text-xl font-semibold tracking-wide">
