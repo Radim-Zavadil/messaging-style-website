@@ -16,13 +16,13 @@ export default function ChatFooter() {
       <div className="space-y-3 text-center">
         {/* Copyright Text */}
         <p className="text-[#888] text-base">
-          © 2026 Messenger with <a href="#">@youragencyname</a>
+          © 2026 Messenger with <a href="#">@jpegsmalfia</a>
         </p>
 
         {/* Links */}
         <div className="flex items-center justify-center gap-2 text-[#333] text-base">
           <a
-            href="#"
+            href="/form"
             className="transition-opacity hover:opacity-50"
           >
             Work With Us

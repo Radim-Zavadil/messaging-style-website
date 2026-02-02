@@ -107,10 +107,13 @@ export default function MessageBubble({ message }: any) {
               <p className="leading-relaxed">
                 We use slack for communication & what works best for you to give you the finished concepts. But before we get there, book a call in our calendar to see if you are the right fit.
               </p>
-              <button className="w-full bg-[#011AFA] text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors">
+              <a
+                href="/form"
+                className="w-full bg-[#011AFA] text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors"
+              >
                 <Calendar className="w-5 h-5" />
                 {message.content}
-              </button>
+              </a>
             </div>
           )}
 
