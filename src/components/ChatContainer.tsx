@@ -15,14 +15,14 @@ export default function ChatContainer() {
 
     script.forEach((msg) => {
       if (msg.sender === "agency") {
-        delay += msg.typingDuration || 1000
-        setTimeout(() => setTyping(true), delay - 600)
+        delay += msg.typingDuration || 2000
+        setTimeout(() => setTyping(true), delay - 1000)
         setTimeout(() => {
           setTyping(false)
           setMessages((m) => [...m, msg])
         }, delay)
       } else {
-        delay += 800
+        delay += 1500
         setTimeout(() => {
           setMessages((m) => [...m, msg])
         }, delay)
@@ -40,7 +40,7 @@ export default function ChatContainer() {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col gap-3 p-4 overflow-y-auto h-screen max-w-md mx-auto"
+      className="flex flex-col gap-3 p-4 max-w-md mx-auto"
     >
       {messages.map((m) => (
         <MessageBubble key={m.id} message={m} />
